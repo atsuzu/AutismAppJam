@@ -1,11 +1,12 @@
 $(function(){
 var textfield = $("input[name=user]");
+var password = $("input[name=pass]");
             $('button[type="submit"]').click(function(e) {
                 e.preventDefault();
                 //little validation just to check username
-                if (textfield.val() != "") {
+                if (textfield.val() != "" && password.val() != "") {
                     //$("body").scrollTo("#output");
-                    $("#output").addClass("alert alert-success animated fadeInUp").html("Welcome back " + "<span style='text-transform:uppercase'>" + textfield.val() + "</span>");
+                    $("#output").addClass("alert alert-success animated fadeInUp").html("Welcome " + "<span style='text-transform:uppercase'>" + textfield.val() + "</span>");
                     $("#output").removeClass(' alert-danger');
                     $("input").css({
                     "height":"0",
@@ -28,6 +29,9 @@ var textfield = $("input[name=user]");
                     $(".avatar").css({
                         "background-image": "url('http://api.randomuser.me/0.3.2/portraits/women/35.jpg')"
                     });
+
+                    setInterval(function () {window.location.href = "events.html"}, 1500); // simulate wait time when login
+
                 } else {
                     //remove success mesage replaced with error message
                     $("#output").removeClass(' alert alert-success');
