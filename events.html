@@ -37,7 +37,7 @@
       <button href="#" id="createButtonId"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</button>
       <br>
       <button href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinIid" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
-      
+
       <div class="col-xs-8" align="center" href="#" class="container" id="joinOptionsID"><h3 align="center"><span class="Thin">Select Event Type</span></h3>
       <select class="form-control" id="sel1">
               <option>Sports</option>
@@ -45,7 +45,7 @@
               <option>Food</option>
               <option>Gameshow Chat</option>
       </select> <br>
-      <button type="button" class="btn btn-info">Submit</button>
+      <button id="submitButtonId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</button>
   </div>
   </div>
   
@@ -85,12 +85,12 @@
 </div>
 
  <!-- Join Event modal -->
-<div class="modal fade" id="JoinEventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="joinEventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="JoinEventModal" align="center">Create an Event</h4>
+        <h4 class="modal-title" id="joinEventModal" align="center">Join Events</h4>
       </div>
       <div class="modal-body">
         <form>
