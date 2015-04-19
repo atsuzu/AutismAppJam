@@ -34,13 +34,24 @@
 <div class="container">
     <h1 align="center"> <span class="Thin">MY </span><span class="Thick">EVENT <span> </h1>
   <div class="row">
-              <button href="#" id="createButton"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</button>
-              <br>
-              <button href="#"  class="btn btn-xlarge" /><i class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
+      <button href="#" id="createButtonId"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</button>
+      <br>
+      <button href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinIid" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
+      
+      <div class="col-xs-8" align="center" href="#" class="container" id="joinOptionsID"><h3 align="center"><span class="Thin">Select Event Type</span></h3>
+      <select class="form-control" id="sel1">
+              <option>Sports</option>
+              <option>Games</option>
+              <option>Food</option>
+              <option>Gameshow Chat</option>
+      </select> <br>
+      <button type="button" class="btn btn-info">Submit</button>
   </div>
+  </div>
+  
 </div>
 
- <!-- modal -->
+ <!-- Create Event modal -->
 <div class="modal fade" id="createEventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -51,19 +62,13 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="control-label">Select Event Type:</label>
-              <div class="dropdown">
-              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                Event Type
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li ><a role="menuitem" tabindex="-1" href="#">Sports</a></li>
-                <li ><a role="menuitem" tabindex="-1" href="#">Games</a></li>
-                <li ><a role="menuitem" tabindex="-1" href="#">Food</a></li>
-              
-              </ul>
-            </div>
+            <label class="control-label">Select Event Type:</label>
+              <select class="form-control" id="sel1">
+                <option>Sports</option>
+                <option>Games</option>
+                <option>Food</option>
+                <option>Gameshow Chat</option>
+              </select>
           </div>
           <div class="form-group">
             <label for="message-text" class="control-label">Message:</label>
@@ -78,6 +83,40 @@
     </div>
   </div>
 </div>
+
+ <!-- Join Event modal -->
+<div class="modal fade" id="JoinEventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="JoinEventModal" align="center">Create an Event</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Select Event Type:</label>
+              <select class="form-control" id="sel1">
+                <option>Sports</option>
+                <option>Games</option>
+                <option>Food</option>
+                <option>Gameshow Chat</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 

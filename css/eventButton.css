@@ -29,6 +29,10 @@
   background: #45E1E8;
 }
 
+#joinButtonId:hover {
+  color: black;
+}
+
 .row{
 	margin-left: 33.5%;
 	margin-top: 2%;

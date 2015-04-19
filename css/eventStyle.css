@@ -6,6 +6,14 @@ body {
     background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
 }
 
+#joinButtonId {
+	color: white;
+}
+
+#joinOptionsID {
+	display: none;
+}
+
 .test { 
 	height: 1px;
 }
@@ -23,6 +31,16 @@ h1 .Thin{
 	display: inline-block;
 	font-weight: 100;
 	font-size: 70px;
+	color: lightCoral;
+	font-family:"Rockwell";	
+
+}
+
+h3 .Thin{
+
+	display: inline-block;
+	font-weight: 100;
+	font-size: 35px;
 	color: lightCoral;
 	font-family:"Rockwell";	
 
