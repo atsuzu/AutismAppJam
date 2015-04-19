@@ -4,9 +4,9 @@ $(function(){
         e.preventDefault();
         
         $('#createEventModal').on('shown.bs.modal', function () {
-            $('#myInput').focus()
+            
         })
-        // window.location.href = "createEvent.html";
+        
 
 
     });

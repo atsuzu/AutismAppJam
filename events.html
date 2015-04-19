@@ -51,8 +51,19 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="recipient-name" class="control-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
+            <label for="recipient-name" class="control-label">Select Event Type:</label>
+              <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Event Type
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li ><a role="menuitem" tabindex="-1" href="#">Sports</a></li>
+                <li ><a role="menuitem" tabindex="-1" href="#">Games</a></li>
+                <li ><a role="menuitem" tabindex="-1" href="#">Food</a></li>
+              
+              </ul>
+            </div>
           </div>
           <div class="form-group">
             <label for="message-text" class="control-label">Message:</label>
@@ -62,7 +73,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
