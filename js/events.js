@@ -7,8 +7,6 @@ $(function(){
             
         })
         
-
-
     });
 
     $('#submitButtonId').click(function(e) {
@@ -17,8 +15,6 @@ $(function(){
         $('#joinEventModal').on('shown.bs.modal', function () {
             
         })
-        
-
 
     });
 
@@ -26,8 +22,7 @@ $(function(){
         $("#joinIid").removeClass("fa fa-chevron-up fa-5x");
         $("#joinIid").addClass("fa fa-hand-o-down fa-5x");
         $("#joinOptionsID").toggle();
-        // document.getElementById("joinOptionsID").style.display = "block";
-
+        
     });
 
 });
