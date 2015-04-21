@@ -30,10 +30,10 @@
             <div id="output"></div>
             <div class="avatar"></div>
             <div class="form-box">
-                <form action="" method="">
+                <form action="login.php" method="post">
                     <input name="user" type="text" placeholder="username">
                     <input name="pass" type="password" placeholder="password">
-                    <button class="btn login m-progress btn-primary" type="submit"><span id="loginText">Login</span></button>
+                    <input type='submit' id='submitLogin' value='Submit'>
                 </form>
             </div>
         </div>
