@@ -36,6 +36,7 @@
                     <input type='submit' id='submitLogin' value='Submit'>
                 </form>
             </div>
+        <a href="registration.php">Registration</a>
         </div>
   </div>
 
