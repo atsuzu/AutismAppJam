@@ -1,43 +1,43 @@
-$(function(){
-var textfield = $("input[name=user]");
-var password = $("input[name=pass]");
-            $('button[type="submit"]').click(function(e) {
-                e.preventDefault();
-                //little validation just to check username
-                if (textfield.val() != "" && password.val() != "") {
-                    //$("body").scrollTo("#output");
-                    $("#output").addClass("alert alert-success animated fadeInUp").html("Welcome " + "<span style='text-transform:uppercase'>" + textfield.val() + "</span>");
-                    $("#output").removeClass(' alert-danger');
-                    $("input").css({
-                    "height":"0",
-                    "padding":"0",
-                    "margin":"0",
-                    "opacity":"0"
-                    });
-                    //change button text 
-                    $('button[type="submit"]').html("continue")
-                    .removeClass("btn-info")
-                    .addClass("btn-default").click(function(){
-                    $("input").css({
-                    "height":"auto",
-                    "padding":"10px",
-                    "opacity":"1"
-                    }).val("");
-                    });
-                    
-                    //show avatar
-                    $(".avatar").css({
-                        "background-image": "url('http://api.randomuser.me/0.3.2/portraits/women/35.jpg')"
-                    });
+$(document).ready(function(){
+    $("#warning").hide();
 
-                    setInterval(function () {window.location.href = "events.html"}, 1500); // simulate wait time when login
-
-                } else {
-                    //remove success mesage replaced with error message
-                    $("#output").removeClass(' alert alert-success');
-                    $("#output").addClass("alert alert-danger animated fadeInUp").html("sorry enter a username ");
-                }
-                //console.log(textfield.val());
-
-            });
+    $("#submitLogin").click(function(){
+        validate();
+    });
 });
+
+function validate(){
+
+    if( $("#usernameId").val() == "" )
+   {
+     $("#warning").empty();
+     $("#warning").html("username cannot be empty!");
+     // document.pinForm.pin.focus() ;
+     $("#warning").show();
+     return;
+   }
+   if( $("#passId").val() == "" )
+   {        
+     $("#warning").empty();
+     $("#warning").html("password cannot be empty!");
+     // document.pinForm.reenterPin.focus() ;
+     $("#warning").show();
+     return;
+   }
+
+   // check in database using ajax
+    var my_data = {"user" : $("#usernameId").val(), "pass" : $("#passId").val()};
+
+    $.ajax({
+        url: "handleLogin.php", // Url to which the request is send
+        type: "POST",           // Type of request to be send, called as method
+        data: my_data,  // Data sent to server, a set of key/value pairs
+        success: function(data)   // A function to be called if request succeeds
+        {
+            $("#warning").html(data);
+            $("#warning").removeClass().addClass("alert alert-success error-resize center");
+            $("#warning").show();
+        }
+    });     
+   
+}

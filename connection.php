@@ -1,4 +1,5 @@
 <?php
+
 	$dbhost = "dbhcoder.ciitzrzepter.us-west-2.rds.amazonaws.com";
 	$dbuser = "dbhcoder";
 	$dbpass = "sargiskyle";
@@ -11,4 +12,5 @@
 		echo "Failed to connect to MySQL: " . mysqli_connect_error();
 	}
 	mysqli_select_db($db);
+
 ?>

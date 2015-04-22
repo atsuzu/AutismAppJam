@@ -12,8 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-   <!-- Custom styles for this template -->
-  <link href="grid.css" rel="stylesheet">
+  
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
@@ -26,19 +25,23 @@
 
 <body>
   <div class="container">
-  <div class="login-container">
-            <div id="output"></div>
-            <div class="avatar"></div>
-            <div class="form-box">
-                <form action="login.php" method="post">
-                    <input name="user" type="text" placeholder="username">
-                    <input name="pass" type="password" placeholder="password">
-                    <input type='submit' id='submitLogin' value='Submit'>
-                </form>
-            </div>
-        <a href="registration.php">Registration</a>
-        </div>
+    <div class="login-container">
+      <div id="output"></div>
+      <div class="avatar"></div>
+      <div class="form-box">
+          <form id="loginFormId" action="" method="post" onsubmit="return false;">
+              <input name="user" id="usernameId" type="text" placeholder="username" required>
+              <input name="pass" id="passId" type="password" placeholder="password" required>
+              <input type='submit' id='submitLogin' value='Submit'>
+          </form>
+      </div>
+      <div class="alert alert-danger error-resize center" align="center" id="warning">
+      <b>Wrong username or password, please try again!</b>
+      </div>
+      <a href="registration.php">Registration</a>
+        
   </div>
+</div>
 
 </body>
 
