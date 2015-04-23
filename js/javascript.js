@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#warning").hide();
-
+   
     $("#submitLogin").click(function(){
         validate();
     });

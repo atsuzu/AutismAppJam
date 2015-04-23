@@ -41,16 +41,16 @@
   <div class="row">
       <button href="#" id="createButtonId"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</button>
       <br>
-      <button href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinIid" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
+      <button href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinId" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
 
       <div class="col-xs-8" align="center" href="#" class="container" id="joinOptionsID"><h3 align="center"><span class="Thin">Select Event Type</span></h3>
-      <select class="form-control" id="sel1">
+      <select class="form-control" id="selJoinId">
               <option>Sports</option>
               <option>Games</option>
               <option>Food</option>
               <option>Gameshow Chat</option>
       </select> <br>
-      <button id="submitButtonId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</button>
+      <button id="joinTypeSubmitId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</button>
   </div>
   </div>
   
@@ -68,7 +68,7 @@
         <form>
           <div class="form-group">
             <label class="control-label">List of events:</label>
-              <select class="form-control" id="sel1">
+              <select class="form-control" >
                 <option>Sports</option>
                 <option>Games</option>
                 <option>Food</option>
@@ -77,7 +77,7 @@
           </div>
           <div class="form-group">
             <label for="message-text" class="control-label">Describe your event:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" id="eventDesId" ></textarea>
           </div>
         </form>
           <div class="alert alert-success error-resize center" align="center" id="createModalWarning">
@@ -100,12 +100,45 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="joinEventModal" align="center">List of selected events</h4>
       </div>
+
+      <div id="sportId">
         <p> <b>  EventType:</b> Sport </p>
         <p> <b>  Date:</b> 04/31/2015 (Sunday) </p>
         <p> <b>  Time:</b> 2:30 PM </p>
         <p> <b>  Location:</b> Aldrich Park (Irvine) </p>
         <p> <b>  Description:</b> Come and play mini football with other kids, free food will be served with fruit punch and orange juice!
             Awesome prizes! Everyone is welcome to join :)</p>
+      </div>
+
+      <div id="gameId">
+        <p> <b>  EventType:</b> Game (Crossword Puzzle Challenge) </p>
+        <p> <b>  Date:</b> 04/31/2015 (Sunday) </p>
+        <p> <b>  Time:</b> 3:00 PM </p>
+        <p> <b>  Location:</b> Donald Bren Hall (Irvine) </p>
+        <p> <b>  Description:</b> If you like challenges, this is your chance to come and have fun with other kids, free food will be served with fruit punch and orange juice!
+            Awesome prizes! Everyone is welcome to join :)</p>
+      </div>
+
+      <div id="foodId">
+        <p> <b>  EventType:</b> Food </p>
+        <p> <b>  Date:</b> 04/31/2015 (Sunday) </p>
+        <p> <b>  Time:</b> 1:30 PM </p>
+        <p> <b>  Location:</b> Aldrich Park (Irvine) </p>
+        <p> <b>  Description:</b> Come and have a good time with other kids. Plus, you'll have a chance to enjoy delicious food from different countries in the WORLD FOR FREE!
+            Why? Becase we love having fun as much as you do! Everyone is welcome to join :)</p>
+      </div>
+
+      <div id="GameshowChatId">
+        <p> <b>  EventType:</b> GameShow Talk </p>
+        <p> <b>  Date:</b> 04/28/2015 (Saturday) </p>
+        <p> <b>  Time:</b> 11:30 AM </p>
+        <p> <b>  Location:</b> Aldrich Park (Irvine) </p>
+        <p> <b>  Description:</b> Do you love any gameshow such as Dancing With the Stars, Family Feud, The Amazing Race, etc. 
+        Have you been so excited to wait and watch your episodes of your favorite gameshow to the point that you ignored
+        your hungriness? And you are trying to find someone to share and talk about your favorite gameshow? We are giving you the
+        chance to do that! Plus, free food will be served! We just ove to have kids bonding and having fun togother :)
+        So, come and join us :) Everyone is welcome to join :) </p>
+      </div>
 
       <div class="modal-body">
         <form>
@@ -117,7 +150,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info">Submit</button>
+        <button  type="button" class="btn btn-info">Submit</button>
       </div>
     </div>
   </div>
