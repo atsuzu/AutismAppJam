@@ -28,6 +28,10 @@
 	  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
 
+	<div class="header">
+            <button href="#" id = "homeId" class="btn btn-xlarge" /><i class="fa fa-home"></i></i>&nbspHome</button>
+	</div>
+
 	<div class="profileContainer">
     	<h1 align="center"> <span class="Thick"> Your Profile <span> </h1>
     	<form action="profileEdit.php" method="post">

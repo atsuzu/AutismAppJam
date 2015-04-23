@@ -1,5 +1,19 @@
 $(function(){
 
+    $('#profileId').click(function(e) {
+        e.preventDefault();
+
+        window.location.replace("profile.php");
+        
+    });
+
+    $('#homeId').click(function(e) {
+        e.preventDefault();
+
+        window.location.replace("events.php");
+        
+    });
+
     $('#createButtonId').click(function(e) {
         e.preventDefault();
         

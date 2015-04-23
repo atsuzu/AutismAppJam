@@ -34,9 +34,15 @@ function validate(){
         data: my_data,  // Data sent to server, a set of key/value pairs
         success: function(data)   // A function to be called if request succeeds
         {
-            $("#warning").html(data);
-            $("#warning").removeClass().addClass("alert alert-success error-resize center");
-            $("#warning").show();
+            if (data == 'Invalid username or password!'){
+                $("#warning").html(data);
+                $("#warning").show();
+            }
+            else if (data == 'Sucessfully logged in!'){
+                 window.location.replace("events.php");
+            }
+
+            // $("#warning").removeClass().addClass("alert alert-success error-resize center");
         }
     });     
    

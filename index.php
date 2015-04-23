@@ -1,3 +1,17 @@
+<?php
+// check if user already logged in
+  if (isset($_SESSION['user'])  && isset($_SESSION['pass'])){
+    header('Location: events.php');
+    exit();
+  }
+  else{
+    displayIndexHtml();
+
+  }
+
+
+  function displayIndexHtml(){
+    echo<<<END
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,13 +50,18 @@
           </form>
       </div>
       <div class="alert alert-danger error-resize center" align="center" id="warning">
-      <b>Wrong username or password, please try again!</b>
+      <b>Invalid username or password, please try again!</b>
       </div>
       <a href="registration.php">Registration</a>
         
   </div>
 </div>
-
 </body>
-
 </html>
+
+END;
+}
+
+?>
+
+  

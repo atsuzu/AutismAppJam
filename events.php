@@ -1,5 +1,4 @@
 <?php
-
     displayEventHtml();
   
     function displayEventHtml(){
@@ -33,7 +32,7 @@
 <body>
 
 <div class="header">
-              <button href="#" id = "profile" class="btn btn-xlarge" /><i class="fa fa-user"></i></i>&nbspProfile</button>
+              <button href="#" id = "profileId" class="btn btn-xlarge" /><i class="fa fa-user"></i></i>&nbspProfile</button>
             
 </div>
 
