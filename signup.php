@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/eventStyle.css">
   <link rel="stylesheet" href="css/eventButton.css">
   <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 <br><br><br><br><br><br>
@@ -29,6 +30,7 @@
     <div class="row">
         <form role="form">
             <div class="col-lg-6">
+                <h2><strong>Sign Up</strong></h2>
                 <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span>Required Field</strong></div>
                 <div class="form-group">
                     <label for="InputFirstName">First Name</label>
