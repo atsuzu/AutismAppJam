@@ -6,6 +6,10 @@ body {
     background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
 }
 
+p {
+    text-indent: 10px;
+}
+
 #joinButtonId {
 	color: white;
 }

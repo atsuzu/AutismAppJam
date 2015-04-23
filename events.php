@@ -67,7 +67,7 @@
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label class="control-label">List of selected events:</label>
+            <label class="control-label">List of events:</label>
               <select class="form-control" id="sel1">
                 <option>Sports</option>
                 <option>Games</option>
@@ -76,14 +76,17 @@
               </select>
           </div>
           <div class="form-group">
-            <label for="message-text" class="control-label">List of selected events:</label>
+            <label for="message-text" class="control-label">Describe your event:</label>
             <textarea class="form-control" id="message-text"></textarea>
           </div>
         </form>
+          <div class="alert alert-success error-resize center" align="center" id="createModalWarning">
+
+          </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info">Submit</button>
+        <button id="closeCreateId" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button id="createEventButtonId" type="button" class="btn btn-info">Submit</button>
       </div>
     </div>
   </div>
@@ -97,6 +100,13 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="joinEventModal" align="center">List of selected events</h4>
       </div>
+        <p> <b>  EventType:</b> Sport </p>
+        <p> <b>  Date:</b> 04/31/2015 (Sunday) </p>
+        <p> <b>  Time:</b> 2:30 PM </p>
+        <p> <b>  Location:</b> Aldrich Park (Irvine) </p>
+        <p> <b>  Description:</b> Come and play mini football with other kids, free food will be served with fruit punch and orange juice!
+            Awesome prizes! Everyone is welcome to join :)</p>
+
       <div class="modal-body">
         <form>
           <div class="form-group">

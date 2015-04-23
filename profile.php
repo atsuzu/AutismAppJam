@@ -38,7 +38,7 @@
     		<h3><table>
     			<tr>
     				<td><span class="Thin"> Username </span> </td>
-    				<td><span class="Thin">  : Old Username </span></td>
+    				<td><span class="Thin">  : Sarsung </span></td>
     			</tr>
 	    		<tr>
 	    			<td><span class="Thin">Password </span></td>
@@ -46,11 +46,11 @@
 	    		</tr><br/>
 	    		<tr>
 	    			<td><span class="Thin">Name </span></td>
-	    			<td><input type="text" name="nameEdit" placeholder="name"></td>
+	    			<td><input type="text" name="nameEdit" placeholder="Sarsung ChoiDuk"></td>
 	    		</tr><br/>
 	    		<tr>
 	    			<td><span class="Thin">Age </span></td>
-	    			<td><input type="text" name="ageEdit" placeholder="age"></td>
+	    			<td><input type="text" name="ageEdit" placeholder="22"></td>
 	    		</tr><br/>
 	    		<td><span class="Thin">Gender </span> </td>
 	    		<td><select id="select1">           
@@ -62,8 +62,6 @@
 	  
     		</table></h3>
     			<input type="submit" value="Save" id="submitButton">
-
-
     	</form>
     </div>
 
