@@ -27,31 +27,23 @@
 <body>
 
 <div class="row" id = "eventsHeader">
-      <div class = "btn-group pull-left" id = "topLeftProfile"><a href="profile.html"  class="btn btn-xlarge" /><i class="fa fa-user"></i>&nbspProfile&nbsp</a></div>
-      <div class = "btn-group"><h1> <span class="Thin">MY </span><span class="Thick">EVENT <span></h1></div>
-      <div class = "btn-group pull-right" id = "topRightAdvice"><a href="advice.html"  class="btn btn-xlarge" /><i class="fa fa-magic"></i>&nbspAdvice</a></div>
+       <div class = "btn-group"><h1> <span class="Thin">MY </span><span class="Thick">EVENT <span></h1></div>
 </div>
 
-<div class="container">
-  <div class="row" id = "createJoinContainer">
+<div class="container" class="col-xs-8" align="center">
+  <div >
+    <a href="profile.html"  class="btn btn-xlarge" /><i class="fa fa-user fa-5x"></i>&nbspProfile&nbsp</a>
+    <br>
+     <a href="advice.html"  class="btn btn-xlarge" /><i class="fa fa-magic fa-5x"></i>Advice</a>
+     <br>
       <a href="#" id="createButtonId"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</a>
       <br>
-      <a href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinId" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</a>
-
-      <div class="col-xs-8" align="center" href="#" class="container" id="joinOptionsID"><h3 align="center"><span class="Thin">Select Event Type</span></h3>
-        <select class="form-control" id="selJoinId">
-                <option>Sports</option>
-                <option>Games</option>
-                <option>Food</option>
-                <option>Gameshow Chat</option>
-        </select> <br>
-        <a id="joinTypeSubmitId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</a>
-      </div>
+      <a href="#" id="joinButtonId"class="btn btn-xlarge" /><i  class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</a>
   </div>
 </div>
 
  <!-- Create Event modal -->
-<div class="modal fade" id="createEventModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="createEventModal"  tabindex="-1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
