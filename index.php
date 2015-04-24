@@ -52,7 +52,7 @@
       <div class="alert alert-danger error-resize center" align="center" id="warning">
       <b>Invalid username or password, please try again!</b>
       </div>
-      <a href="registration.php">Registration</a>
+      <a href="signup.php">Registration</a>
         
   </div>
 </div>
