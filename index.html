@@ -1,17 +1,4 @@
-<?php
-// check if user already logged in
-  if (isset($_SESSION['user'])  && isset($_SESSION['pass'])){
-    header('Location: events.php');
-    exit();
-  }
-  else{
-    displayIndexHtml();
 
-  }
-
-
-  function displayIndexHtml(){
-    echo<<<END
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,10 +45,5 @@
 </div>
 </body>
 </html>
-
-END;
-}
-
-?>
 
   
