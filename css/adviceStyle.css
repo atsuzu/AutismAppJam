@@ -4,7 +4,6 @@
 .method .list-header .header {
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 0.8em;
   color: #999;
   background-color: #dae4fa; }
 .method [class^="row"],
@@ -12,19 +11,13 @@
   border-bottom: 1px solid #ddd; }
   .method [class^="row"]:hover,
   .method [class*=" row"]:hover {
-        background: -webkit-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-    background: -moz-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-    background: -ms-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-    background: -o-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-    background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%); }
-.method .cell {
-  font-size: 0.85em; }
+
+ }
   .method .cell .mobile-isrequired {
     display: none;
     font-weight: normal;
     text-transform: uppercase;
-    color: #aaa;
-    font-size: 0.8em; }
+    color: #aaa; }
   .method .cell .propertyname {
     white-space: nowrap;
     overflow: hidden;
@@ -50,17 +43,14 @@
   .method .cell {
     padding: 0 10px; }
     .method .cell .propertyname {
-      font-weight: bold;
-      font-size: 1.2em; }
+      font-weight: bold;}
       .method .cell .propertyname .lookuplink {
         font-weight: normal;
-        font-size: 1.5em;
         position: absolute;
         top: 0;
         right: 10px; }
     .method .cell .type {
-      padding-left: 10px;
-      font-size: 1.1em; }
+      padding-left: 10px;}
     .method .cell .isrequired {
       padding-left: 10px;
       display: none; }
@@ -108,6 +98,10 @@
     
 
 .method {
+
+  font-size: 20px;
+  font-family: "Trebuchet MS";
+
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
