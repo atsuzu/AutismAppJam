@@ -26,28 +26,28 @@
 
 <body>
 
-<div class="header">
-      <button href="profile.html" id = "profileId" class="btn btn-xlarge" /><i class="fa fa-user"></i></i>&nbspProfile</button>       
+<div class="row" id = "eventsHeader">
+      <div class = "btn-group pull-left" id = "topLeftProfile"><button href="profile.html"  class="btn btn-xlarge" /><i class="fa fa-user"></i>&nbspProfile&nbsp</button></div>
+      <div class = "btn-group"><h1> <span class="Thin">MY </span><span class="Thick">EVENT <span></h1></div>
+      <div class = "btn-group pull-right" id = "topRightAdvice"><button href="profile.html"  class="btn btn-xlarge" /><i class="fa fa-magic"></i>&nbspAdvice</button></div>
 </div>
 
 <div class="container">
-    <h1 align="center"> <span class="Thin">MY </span><span class="Thick">EVENT <span> </h1>
-  <div class="row">
+  <div class="row" id = "createJoinContainer">
       <button href="#" id="createButtonId"  class="btn btn-xlarge" /><i class="fa fa-clock-o fa-5x" data-toggle="modal" data-target="#createEventModal"> </i> Create</button>
       <br>
       <button href="#" id="joinButtonId"class="btn btn-xlarge" /><i id="joinId" class="fa fa-chevron-up fa-5x" ></i>Join&nbsp&nbsp&nbsp&nbsp</button>
 
       <div class="col-xs-8" align="center" href="#" class="container" id="joinOptionsID"><h3 align="center"><span class="Thin">Select Event Type</span></h3>
-      <select class="form-control" id="selJoinId">
-              <option>Sports</option>
-              <option>Games</option>
-              <option>Food</option>
-              <option>Gameshow Chat</option>
-      </select> <br>
-      <button id="joinTypeSubmitId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</button>
+        <select class="form-control" id="selJoinId">
+                <option>Sports</option>
+                <option>Games</option>
+                <option>Food</option>
+                <option>Gameshow Chat</option>
+        </select> <br>
+        <button id="joinTypeSubmitId" type="button" class="btn btn-info" data-toggle="modal" data-target="#joinEventModal" >Submit</button>
+      </div>
   </div>
-  </div>
-  
 </div>
 
  <!-- Create Event modal -->

@@ -33,11 +33,6 @@
   color: black;
 }
 
-.row{
-	margin-left: 33.5%;
-	margin-top: 2%;
-  padding-top: 0%;
-}
 
 #profile{
   margin-left: 8px;
@@ -46,5 +41,10 @@
 
 .header{
   float: left;
+}
+
+#createJoinContainer{
+  margin-left: 33.5%;
+  margin-right: auto;
 }
 

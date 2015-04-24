@@ -49,3 +49,17 @@ h3 .Thin{
 	font-family:"Rockwell";	
 
 }
+
+#eventsHeader{
+	text-align: center;
+}
+
+#topLeftProfile
+{
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+#topRightAdvice{
+	margin-top: 2%;
+}
