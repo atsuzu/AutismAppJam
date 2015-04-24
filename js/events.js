@@ -7,14 +7,14 @@ $(document).ready(function(){
      $('#profileId').click(function(e) {
         e.preventDefault();
 
-        window.location.replace("profile.php");
+        window.location.replace("profile.html");
         
     });
 
     $('#homeId').click(function(e) {
         e.preventDefault();
 
-        window.location.replace("events.php");
+        window.location.replace("events.html");
         
     });
 

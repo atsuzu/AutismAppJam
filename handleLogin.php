@@ -23,7 +23,7 @@
 		// 	username = '$userVar' AND password='$passVar'
 		// 	";
 
-		if ($userVar == 'sarsung_user' && $passVar == 'sarsung_pass'){
+		if ($userVar == 'admin' && $passVar == 'admin'){
 			// Set session variables
 			$_SESSION['user'] = $userVar;
 			$_SESSION['pass'] = $passVar;

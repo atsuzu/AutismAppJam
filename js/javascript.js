@@ -29,7 +29,7 @@ function validate(){
     var my_data = {"user" : $("#usernameId").val(), "pass" : $("#passId").val()};
 
     $.ajax({
-        url: "handleLogin.php", // Url to which the request is send
+        url: "handleLogin.html", // Url to which the request is send
         type: "POST",           // Type of request to be send, called as method
         data: my_data,  // Data sent to server, a set of key/value pairs
         success: function(data)   // A function to be called if request succeeds
@@ -39,7 +39,7 @@ function validate(){
                 $("#warning").show();
             }
             else if (data == 'Sucessfully logged in!'){
-                 window.location.replace("events.php");
+                 window.location.replace("events.html");
             }
 
             // $("#warning").removeClass().addClass("alert alert-success error-resize center");
